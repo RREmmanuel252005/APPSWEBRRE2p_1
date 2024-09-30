@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro de dispositivos</title>
+    <style>
+        form{
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+        label{
+            font-weight: bold;
+        }
+        input, select{
+            width: 100%;
+            margin-top: 10px;
+        }
+        input[type="submit"]{
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Formulario de registro de dispositivos electronicos
+    </h1>
+    <form>
+        <label for="nombre">
+            Nombre del cliente: 
+        </label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="tipo">
+            Tipo de dispositivo:
+        </label>
+        <select id="tipo" name="tipo">
+            <option value="cel">
+                Celular
+            </option>
+            <option value="compu">
+                Computadora
+            </option>
+        </select>
+
+        <label for="reparar">
+            ¿Necesita repararse?
+            <br>
+            Sí
+        </label>
+        <input type="checkbox" id="vacunado" name="vacunado">
+        
+        <label>
+            Mótivo:
+        </label>
+        <input type="radio" id="reparar" name="genero" value="reparar">Reparación
+        <input type="radio" id="mantenimento" name="genero" value="mantenimento">Mantenimento
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
